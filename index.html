@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy - Character Rise</title>
+<style>
+  body { font-family: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; max-width: 780px; margin: 2rem auto; padding: 0 1rem; color: #222; }
+  h1, h2 { line-height: 1.25; }
+  h1 { font-size: 1.6rem; }
+  h2 { font-size: 1.2rem; margin-top: 2rem; }
+  code { background: #f0f0f0; padding: 0 0.3em; border-radius: 3px; font-size: 0.9em; }
+  footer { margin-top: 3rem; font-size: 0.85em; color: #666; }
+</style>
+</head>
+<body>
+
+<h1>Character Rise Privacy Policy</h1>
+<p><strong>Effective date:</strong> 2 October 2026</p>
+<p><strong>Last updated:</strong> 2 October 2026</p>
+
+<p>This Privacy Policy explains how <strong>Virtual Game Knight, LLC</strong>
+("we", "our", "us") handles information in the <strong>Character Rise</strong>
+application ("the app") for Android and other platforms.</p>
+
+<h2>The short version</h2>
+<p>We do not have an account system, we do not host a backend for your game
+content, and we do not use analytics, crash reporting, advertising, or tracking
+SDKs. All of your character data, settings, and app history stay on your
+device. When you use AI generation, only the text you enter for that request is
+sent from your device to the AI provider that <em>you</em> choose and configure,
+so it can produce your result.</p>
+
+<h2>1. Data we do not collect</h2>
+<p>Character Rise does not collect, sell, or rent personal data. Specifically:</p>
+<ul>
+  <li>No account creation or personal identifiers (name, email, phone, ID).</li>
+  <li>No location, contacts, calendar, health, or biometric data.</li>
+  <li>No advertising identifiers, device identifiers, or analytics/telemetry.</li>
+  <li>No crash reporting or error logs are sent to us or to any third party.</li>
+  <li>No in-app purchases and no payment information.</li>
+</ul>
+
+<h2>2. Data we store on your device</h2>
+<p>The app stores your content locally, in the app's private sandboxed storage
+on your device (and in your device's local storage):</p>
+<ul>
+  <li>Your characters and their data (a local <code>characters.json</code> file).</li>
+  <li>Your preferences, theme, language, and per-character history.</li>
+  <li>API keys for AI providers you add. Keys are encrypted before storage using
+      AES-256-GCM, under a device secret that never leaves the device: the
+      Android Keystore on Android (protected with your device PIN/biometric
+      prompt) or your operating system credential store on desktop. The app
+      never stores an API key in plain text, and we never see it.</li>
+</ul>
+<p>This data exists only on your device and is not transmitted to us. You can
+delete it at any time by deleting the characters file in the app or by
+uninstalling the app.</p>
+
+<h2>3. Data transmitted to AI providers you choose</h2>
+<p>The core feature sends the text you submit (your prompt and the character
+details you selected) from your device directly to the AI provider you have
+configured - by default Google Gemini or Anthropic Claude, or any
+OpenAI-compatible endpoint you set, including a model server on your own
+network. This is required to generate the result you requested.</p>
+<p>Each provider then processes your prompt under <em>its own</em> terms and
+privacy policy:</p>
+<ul>
+  <li>Google Gemini: see Google's privacy policy and the Gemini API terms.</li>
+  <li>Anthropic Claude: see Anthropic's Privacy Policy and Commercial Terms.</li>
+  <li>Custom/local endpoints: see that service's own policies.</li>
+</ul>
+<p>We do not receive, store, or process the content you send to these
+providers. We never inspect your prompts or generated output. Transmission is
+always over HTTPS (or plain HTTP only to a loopback address such as a local
+model server on your own machine).</p>
+
+<h2>4. Content reporting</h2>
+<p>The app includes a report button so you can flag AI-generated content you
+find offensive or harmful. A report includes the character name, the text you sent,
+the generated reply, and your reason. Reports are held on your device in local
+storage and are sent only if you choose to submit them, to the developer's
+reporting address (when configured), and are used solely to investigate and
+improve content safety. You can delete queued reports at any time from the
+app's About screen.</p>
+
+<h2>5. Children's privacy</h2>
+<p>The app is a utility for tabletop role-playing games, aimed at players and
+game masters. It is a 13+ rated utility and is not directed to children under
+13, and we do not knowingly collect personal information from anyone,
+including children.</p>
+
+<h2>6. Third-party links</h2>
+<p>The app may open links (for example, to provider documentation or this
+policy) in your browser. Those sites have their own privacy policies and we are
+not responsible for them.</p>
+
+<h2>7. Security</h2>
+<p>All network traffic uses TLS (HTTPS). Stored API keys are encrypted with
+AES-256-GCM under a device-held secret as described above, and decrypted key
+material is wiped from memory immediately after use. Device backups of app data
+are disabled in the Android app manifest (<code>allowBackup="false"</code>), so
+your characters and key material are not uploaded to cloud backup.</p>
+
+<h2>8. Your rights</h2>
+<p>Because we collect no personal data, there is nothing to access, correct, or
+delete on our servers. Your in-app data is yours and is controlled locally. If
+you are in the EU/UK or a state with privacy laws (such as California CCPA/CPRA)
+this policy reflects the same outcome: the app processes no personal data about
+you.</p>
+
+<h2>9. Changes to this policy</h2>
+<p>We may update this policy from time to time. If we make material changes, we
+will update the "Last updated" date above and post the new version at this
+address. Continued use of the app after changes means you accept the updated
+policy.</p>
+
+<h2>10. Contact</h2>
+<p>If you have questions about this policy or about data handling in the app,
+contact us at:</p>
+<p><strong>Virtual Game Knight, LLC</strong><br>
+Email: <a href="mailto:support@virtualgameknight.com">support@virtualgameknight.com</a></p>
+
+<footer>&copy; 2026 Virtual Game Knight, LLC. Character Rise. All rights reserved.</footer>
+
+</body>
+</html>
